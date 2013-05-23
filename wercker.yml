@@ -1,0 +1,9 @@
+box: wercker/python
+build:
+  steps:
+    - script:
+        name: "install libmemcached"
+        code: |-
+          sudo apt-get update
+          sudo apt-get install libmemcached
+    - pip-install
