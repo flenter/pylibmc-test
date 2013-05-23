@@ -2,7 +2,7 @@ box: wercker/python
 build:
   steps:
     - script:
-        name: "install libmemcached"
+        name: "install libmemcached6"
         code: |-
           sudo apt-get update
           sudo apt-get install libmemcached
