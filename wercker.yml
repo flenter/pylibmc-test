@@ -5,5 +5,5 @@ build:
         name: "install libmemcached6"
         code: |-
           sudo apt-get update
-          sudo apt-get install libmemcached
+          sudo apt-get install libmemcached6
     - pip-install
