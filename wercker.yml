@@ -17,6 +17,8 @@ deploy:
         name: "big sleep"
     - script:
         name: "failing step"
+        code: |-
+          please_fail_here!
     - sleep:
         name: "long sleep"
     - sleep:
