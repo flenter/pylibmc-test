@@ -7,3 +7,21 @@ build:
           sudo apt-get update
           sudo apt-get install libmemcached-dev
     - pip-install
+deploy:
+  steps:
+    - sleep:
+        name: "first sleep"
+    - sleep:
+        name: "second sleep"
+    - sleep:
+        name: "big sleep"
+    - script:
+        name: "failing step"
+    - sleep:
+        name: "long sleep"
+    - sleep:
+        name: "short sleep"
+    - sleep:
+        name: "less sleep"
+    - sleep:
+        name: "less sleep"
