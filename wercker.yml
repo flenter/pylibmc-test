@@ -26,4 +26,4 @@ deploy:
     - sleep:
         name: "less sleep"
     - sleep:
-        name: "less sleep"
+        name: "useless sleep"
