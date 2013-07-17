@@ -9,21 +9,28 @@ build:
     - pip-install
 deploy:
   steps:
-    - sleep:
+    - script:
         name: "first sleep"
-    - sleep:
+        code: sleep 1
+    - script:
         name: "second sleep"
-    - sleep:
+        code: sleep 15
+    - script:
         name: "big sleep"
+        code: sleep 10
     - script:
         name: "failing step"
         code: |-
           please_fail_here!
-    - sleep:
+    - script:
         name: "long sleep"
-    - sleep:
+        code: sleep 1
+    - script:
         name: "short sleep"
-    - sleep:
+        code: sleep 1
+    - script:
         name: "less sleep"
-    - sleep:
+        code: sleep 1
+    - script:
         name: "useless sleep"
+        code: sleep 1
