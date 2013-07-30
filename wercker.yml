@@ -7,9 +7,6 @@ build:
           sudo apt-get update
           sudo apt-get install libmemcached-dev
     - pip-install
-    - script:
-        name: "force failure"
-        code: fail-hard-now
   final-steps:
     - wercker/hipchat-notify:
         token: $HIPCHAT_TOKEN
