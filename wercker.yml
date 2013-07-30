@@ -7,6 +7,12 @@ build:
           sudo apt-get update
           sudo apt-get install libmemcached-dev
     - pip-install
+  final-steps:
+    - wercker/hipchat-notify:
+        token: $HIPCHAT_TOKEN
+        room_id: 152974
+        from_name: wercker
+        on: failed
 deploy:
   steps:
     - script:
@@ -34,3 +40,9 @@ deploy:
     - script:
         name: "useless sleep"
         code: sleep 1
+  final-steps:
+    - wercker/hipchat-notify:
+        token: $HIPCHAT_TOKEN
+        room_id: 152974
+        from_name: wercker
+        on: failed
