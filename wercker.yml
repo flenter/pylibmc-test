@@ -10,8 +10,7 @@ build:
   after-steps:
     - wercker/hipchat-notify:
         token: $HIPCHAT_TOKEN
-        room_id: 152974
-        from_name: wercker
+        room-id: 152974
         on: failed
 deploy:
   steps:
@@ -43,6 +42,5 @@ deploy:
   after-steps:
     - wercker/hipchat-notify:
         token: $HIPCHAT_TOKEN
-        room_id: 152974
-        from_name: wercker
+        room-id: 152974
         on: failed
