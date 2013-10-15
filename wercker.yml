@@ -2,11 +2,43 @@ box: wercker/python
 build:
   steps:
     - script:
-        name: "install libmemcached6"
-        code: |-
-          sudo apt-get update
-          sudo apt-get install libmemcached-dev
-    - pip-install
+        name: "first sleep"
+        code: |
+          sleep 1
+          sleep 1
+          sleep 1
+          sleep 1
+          sleep 1
+          sleep 1
+          sleep 1
+          sleep 1
+          sleep 1
+          sleep 1
+          sleep 1
+          sleep 1
+          sleep 1
+          sleep 1
+          sleep 1
+          sleep 1
+          sleep 1
+    - script:
+        name: "second sleep"
+        code: |
+          sleep 1
+          sleep 1
+          sleep 1
+          sleep 1
+          sleep 1
+          sleep 1
+          sleep 1
+          sleep 1
+          sleep 1
+
+    - script:
+        name: "big sleep"
+        code: sleep 10
+
+          
   after-steps:
     - wercker/hipchat-notify:
         token: $HIPCHAT_TOKEN
@@ -16,10 +48,37 @@ deploy:
   steps:
     - script:
         name: "first sleep"
-        code: sleep 1
+        code: |
+          sleep 1
+          sleep 1
+          sleep 1
+          sleep 1
+          sleep 1
+          sleep 1
+          sleep 1
+          sleep 1
+          sleep 1
+          sleep 1
+          sleep 1
+          sleep 1
+          sleep 1
+          sleep 1
+          sleep 1
+          sleep 1
+          sleep 1
     - script:
         name: "second sleep"
-        code: sleep 15
+        code: |
+          sleep 1
+          sleep 1
+          sleep 1
+          sleep 1
+          sleep 1
+          sleep 1
+          sleep 1
+          sleep 1
+          sleep 1
+
     - script:
         name: "big sleep"
         code: sleep 10
