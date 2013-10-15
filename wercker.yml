@@ -38,7 +38,44 @@ build:
         name: "big sleep"
         code: sleep 10
 
+    - script:
+        name: "four sleep"
+        code: |
+          sleep 1
+          sleep 1
+          sleep 1
+          sleep 1
+          sleep 1
+          sleep 1
+          sleep 1
+          sleep 1
+          sleep 1
           
+    - script:
+        name: "more sleep"
+        code: |
+          sleep 1
+          sleep 1
+          sleep 1
+          sleep 1
+          sleep 1
+          sleep 1
+          sleep 1
+          sleep 1
+          sleep 1
+          
+    - script:
+        name: "final sleep"
+        code: |
+          sleep 1
+          sleep 1
+          sleep 1
+          sleep 10
+          sleep 5
+          sleep 4
+          sleep 3
+          sleep 2
+          sleep 1
   after-steps:
     - wercker/hipchat-notify:
         token: $HIPCHAT_TOKEN
