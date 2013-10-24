@@ -36,7 +36,9 @@ build:
 
     - script:
         name: "big sleep"
-        code: sleep 10
+        code: |
+          cp * $WERCKER_REPORT_ARTIFACTS_DIR
+          sleep 10
 
     - script:
         name: "four sleep"
