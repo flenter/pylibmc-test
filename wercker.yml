@@ -1,9 +1,13 @@
 box: wercker/python
+services:
+ - wercker/rabbit-mq
+ 
 build:
   steps:
     - script:
         name: "first sleep"
         code: |
+          export
           sleep 1
           sleep 1
           sleep 1
