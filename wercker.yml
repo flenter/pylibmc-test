@@ -9,6 +9,7 @@ build:
         code: |
           export
           sleep 1
+          fail_now
           #           sleep 1
           #           sleep 1
           #           sleep 1
@@ -168,7 +169,11 @@ build:
           #           sleep 3
           #           sleep 2
           sleep 1
-#   after-steps:
+  after-steps:
+    - script:
+        code:
+          export
+
 #     - wercker/hipchat-notify:
 #         token: $HIPCHAT_TOKEN
 #         room-id: 152974
