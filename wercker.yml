@@ -168,11 +168,11 @@ build:
           sleep 3
           sleep 2
           sleep 1
-  after-steps:
-    - wercker/hipchat-notify:
-        token: $HIPCHAT_TOKEN
-        room-id: 152974
-        on: failed
+#   after-steps:
+#     - wercker/hipchat-notify:
+#         token: $HIPCHAT_TOKEN
+#         room-id: 152974
+#         on: failed
 deploy:
   steps:
     - script:
@@ -223,9 +223,9 @@ deploy:
     - script:
         name: "useless sleep"
         code: sleep 1
-    - heroku-deploy
-  after-steps:
-    - wercker/hipchat-notify:
-        token: $HIPCHAT_TOKEN
-        room-id: 152974
-        on: failed
+            #    - heroku-deploy
+            #  after-steps:
+            #    - wercker/hipchat-notify:
+            #        token: $HIPCHAT_TOKEN
+            #        room-id: 152974
+            #        on: failed
