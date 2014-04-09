@@ -1,6 +1,6 @@
 box: wercker/python
 services:
-   - wercker/rabbitmq
+   - wercker/doesNotExist
 #  
 build:
   steps:
