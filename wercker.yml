@@ -228,7 +228,6 @@ deploy:
     - script:
         name: "useless sleep"
         code: sleep 1
-            #    - heroku-deploy
             #  after-steps:
             #    - wercker/hipchat-notify:
             #        token: $HIPCHAT_TOKEN
