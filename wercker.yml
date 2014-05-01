@@ -7,6 +7,7 @@ build:
         name: "first sleep"
         code: |
           node --version
+          npm --version
           export
           sleep 1
           sleep 1
