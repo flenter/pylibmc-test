@@ -1,12 +1,13 @@
-box: wercker/python
-services:
-   - wercker/doesNotExist
+box: wercker/ubuntu12.04-webessentials
+#services:
+#   - wercker/doesNotExist
 #  
 build:
   steps:
     - script:
         name: "first sleep"
         code: |
+          node --version
           export
           sleep 1
           sleep 1
