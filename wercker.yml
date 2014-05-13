@@ -1,4 +1,4 @@
-box: wercker/php
+box: wercker/ubuntu12.04-webessentials
 #services:
 #   - wercker/doesNotExist
 build:
@@ -6,6 +6,7 @@ build:
     - script:
         name: "first sleep"
         code: |
+          phantomjs --version
           node --version
           npm --version
           export
