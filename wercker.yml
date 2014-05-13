@@ -1,4 +1,4 @@
-box: wercker/rvm
+box: wercker/python
 #services:
 #   - wercker/doesNotExist
 build:
