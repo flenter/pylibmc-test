@@ -6,6 +6,9 @@ build:
     - script:
         name: "first sleep"
         code: |
+          ls $HOME
+          ls -la $HOME/phantomjs
+          ls -la $HOME/phantomjs/bin
           phantomjs --version
           node --version
           npm --version
