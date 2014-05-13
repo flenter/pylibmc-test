@@ -1,4 +1,4 @@
-box: wercker/ubuntu12.04-webessentials
+box: wercker/ubuntu12.04-webessentials@1.0.1
 #services:
 #   - wercker/doesNotExist
 build:
@@ -6,6 +6,8 @@ build:
     - script:
         name: "first sleep"
         code: |
+          export
+          cat ~/.bash_profile
           ls $HOME
           ls -la $HOME/phantomjs
           ls -la $HOME/phantomjs/bin
