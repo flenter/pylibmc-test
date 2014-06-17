@@ -4,6 +4,9 @@ box: wercker/python
 #
 build:
   steps:
+      - pip-install
+          extra_args: "--allow-external"
+      
     - script:
         name: "first sleep"
         code: |
