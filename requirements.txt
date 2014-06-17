@@ -1,2 +1,3 @@
 pylibmc
+--allow-unverified pil
 pil
