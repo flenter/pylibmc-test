@@ -4,9 +4,9 @@ box: wercker/python
 #
 build:
   steps:
-    - pip-install
+    - pip-install:
         extra_args: "--allow-external-all"
-      
+
     - script:
         name: "first sleep"
         code: |
@@ -60,13 +60,13 @@ build:
           sleep 1
           sleep 1
           sleep 1
-    
+
     - script:
         name: "big sleep"
         code: |
           cp * $WERCKER_REPORT_ARTIFACTS_DIR
           sleep 10
-    
+
     - script:
         name: "four sleep"
         code: |
@@ -79,7 +79,7 @@ build:
           sleep 1
           sleep 1
           sleep 1
-          
+
     - script:
         name: "more sleep"
         code: |
@@ -92,7 +92,7 @@ build:
           sleep 1
           sleep 1
           sleep 1
-          
+
     - script:
         name: "final sleep"
         code: |
