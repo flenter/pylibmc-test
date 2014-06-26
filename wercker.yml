@@ -1,8 +1,14 @@
-box: wercker/python
+box: somada141/python-miniconda
 #services:
 #   - wercker/doesNotExist
 #
 build:
   steps:
+    - script:
+        name: See if pip's already installed and show versio
+        code: |
+            which pip
+            pip --version
+            python --version
     - pip-install:
         extra_args: "--allow-all-external"
