@@ -11,5 +11,13 @@ build:
             which pip
             pip --version
             python --version
+            fail_please
     - pip-install:
         extra_args: "--allow-all-external"
+
+  after-steps:
+    - script:
+        name: test
+        code: |
+            export
+
